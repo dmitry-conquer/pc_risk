@@ -3,13 +3,13 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: "1rem",
+      padding: "20px",
     },
     screens: {
       sm: "640px",
       md: "768px",
       lg: "1024px",
-      xl: "1240px",
+      xl: "1272px",
       "2xl": "1440px",
     },
     extend: {
