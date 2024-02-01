@@ -3,8 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "ui/burger-button.scss";
-@import "ui/search-form.scss";
+@import "ui/burger-button";
+@import "ui/search-form";
+@import "ui/tabs";
 
 @layer base {
   body {

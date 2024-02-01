@@ -3,20 +3,26 @@ const tabs = document.querySelectorAll(".tab");
 tabs.forEach(tab => {
   if (tab) {
     tab.addEventListener("click", e => {
-      const target = e.target.closest("[data-tab-caption]");
+      const target = e.target.closest("[data-tab-button]");
       if (!target) return;
-      const captionId = target.dataset.tabCaption;
-      const content = tab.querySelector(`[data-tab-content='${captionId}']`);
+      const buttonId = target.dataset.tabButton;
+      const content = tab.querySelector(`[data-tab-content='${buttonId}']`);
       if (!content) return;
 
-      const captions = tab.querySelectorAll("[data-tab-caption]");
-      captions.forEach(caption => caption.classList.remove("active-tab-caption"));
+      const buttons = tab.querySelectorAll("[data-tab-button]");
+      buttons.forEach(button => {
+        button.disabled = false;
+        button.classList.remove("active-tab-button");
+      });
 
       const contents = tab.querySelectorAll("[data-tab-content]");
-      contents.forEach(el => el.classList.remove("active-tab-content"));
+      contents.forEach(el => {
+        el.style.display = "none";
+      });
 
-      target.classList.add("active-tab-caption");
-      content.classList.add("active-tab-content");
+      target.classList.add("active-tab-button");
+      target.disabled = true;
+      content.style.display = "block";
     });
   }
 });

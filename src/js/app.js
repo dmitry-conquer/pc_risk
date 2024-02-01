@@ -3,7 +3,7 @@
 import { useDynamicAdapt } from "./modules/dynamicAdapt.js";
 // import "./modules/sliders.js";
 // import "./modules/imask.js";
-// import "./modules/tabs.js";
+import "./modules/tabs.js";
 // import "./modules/header.js";
 // // import "./modules/load-more.js";
 // import "./modules/scroll.js";

@@ -5,7 +5,6 @@ const burgerMenu = document.getElementById("header-nav");
 const openSearchButton = document.getElementById("open-search");
 const searchForm = document.getElementById("search-form");
 
-console.log(burgerInner);
 if (burgerButton && burgerMenu) {
   document.body.addEventListener("click", toggleHeaderActions);
 }
