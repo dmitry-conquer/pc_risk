@@ -3,5 +3,5 @@
 			Created with Pixso.
 	</desc>
 	<defs/>
-	<path id="Vector" d="M5.49994 10.0039L0.999939 5.50391L5.49994 1.00391" stroke="currentColor" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"/>
+	<path id="Vector" d="M5.49994 10.0039L0.999939 5.50391L5.49994 1.00391" stroke="currentColor" stroke-opacity="1.000000" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
 </svg>

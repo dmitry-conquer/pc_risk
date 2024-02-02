@@ -8,23 +8,27 @@
 @import "ui/tabs";
 @import "ui/popups";
 
+@import "typoghraphy/table-content";
+@import "typoghraphy/tables";
+
+blockquote p:after {
+  content: "";
+}
+blockquote p:before {
+  content: "";
+}
+q,
+q p,
+blockquote,
+blockquote p {
+  quotes: "" "" "" "";
+}
+
 @layer base {
   html {
     @apply scroll-smooth;
   }
   body {
     @apply font-roboto text-base font-normal;
-  }
-  blockquote p:after {
-    content: "";
-  }
-  blockquote p:before {
-    content: "";
-  }
-  q,
-  q p,
-  blockquote,
-  blockquote p {
-    quotes: "" "" "" "";
   }
 }
