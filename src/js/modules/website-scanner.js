@@ -6,6 +6,7 @@ const loadingProcess = document.getElementById("loading-process");
 const scannerStatus = document.getElementById("scanner-status");
 const getReportBtn = document.getElementById("get-report");
 const reportDetails = document.getElementById("report-details");
+const popupScanning = document.getElementById("popup-scanning");
 let progress = 0;
 const result = true;
 
@@ -33,13 +34,15 @@ function scanSite() {
   setTimeout(loading, 300);
 }
 
-startScanningBtn.addEventListener("click", () => {
-  if (document.getElementById("popup-scanning")) {
+if (startScanningBtn && popupScanning) {
+  startScanningBtn.addEventListener("click", () => {
     scanSite();
-  }
-});
+  });
+}
 
-getReportBtn.addEventListener("click", () => {
-  MicroModal.close("popup-scanning");
-  reportDetails.style.display = "block";
-});
+if (getReportBtn) {
+  getReportBtn.addEventListener("click", () => {
+    MicroModal.close("popup-scanning");
+    reportDetails.style.display = "block";
+  });
+}
