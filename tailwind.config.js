@@ -18,22 +18,6 @@ module.exports = {
        "4xl": "2rem",
        "5xl": "2.5rem",
       },
-      colors: {
-        primary: {
-          100: "#F7F8FA",
-          200: "#ECF1F7",
-          300: "#DDE5EF",
-          400: "#C8D9F2",
-          500: "#0041A1",
-          600: "#00255C",
-        },
-        title: {
-          DEFAULT: "#1E2024"
-        },
-        text: {
-          DEFAULT: "#1C1C2299"
-        },
-      },
     },
     fontFamily: {
       roboto: ["Roboto", "sans-serif"],

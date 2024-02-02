@@ -6,8 +6,12 @@
 @import "ui/burger-button";
 @import "ui/search-form";
 @import "ui/tabs";
+@import "ui/popups";
 
 @layer base {
+  html {
+    @apply scroll-smooth;
+  }
   body {
     @apply font-roboto text-base font-normal;
   }

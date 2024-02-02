@@ -1,0 +1,42 @@
+<div class="popup pointer-events-none invisible fixed inset-0 z-[9999] h-full w-full bg-black/50 opacity-0 transition-all" id="popup-scanning" aria-hidden="true">
+  <div class="flex h-full w-full items-center justify-center px-4">
+    <div class="w-full max-w-[528px] overflow-hidden rounded-xl bg-white" role="dialog" aria-modal="true">
+      <div class="flex items-center justify-between bg-[#ECF1F7] px-6 py-5">
+        <p class="text-2xl font-bold leading-loose text-gray-900">Scanning URL</p>
+        <button type="button" class="group" data-micromodal-close aria-label="Close modal">
+          <svg class="pointer-events-none size-6 text-black/40 group-hover:text-blue-800">
+            <use href="./sprites/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="bg-white px-6 pb-7 pt-5">
+        <dl class="mb-5 space-y-3">
+          <div class="flex flex-wrap gap-2">
+            <dt class="text-lg font-bold">Normalized URL:</dt>
+            <dd class="text-lg"><a href="https://scanner.pcrisk.com/" target="_blank" class="text-blue-800 hover:underline">https://scanner.pcrisk.com/</a></dd>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <dt class="text-lg font-bold">Last scan date:</dt>
+            <dd class="text-lg">25.12.2023, 14:31:59</dd>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <dt class="text-lg font-bold">Current status:</dt>
+            <dd id="scanner-status" class="text-lg font-bold text-blue-800">Starting</dd>
+          </div>
+        </dl>
+        <div id="loading-bar" class="h-8 w-full rounded-lg bg-[#F7F8FA]">
+          <div id="loading-process" class="h-full w-0 rounded-lg bg-gradient-to-r from-blue-800 to-blue-600 transition-all duration-300 ease-linear"></div>
+        </div>
+        <a
+         href="#report-details"
+          id="get-report"
+          class="group hidden h-10 w-[200px] items-center justify-center gap-x-3 rounded-full border border-transparent bg-blue-800 px-5 font-bold leading-normal text-white transition-colors hover:border-blue-800 hover:bg-white hover:text-blue-800">
+          <svg class="size-5">
+            <use href="./sprites/sprite.svg#icon-report"></use>
+          </svg>
+          Detailed report
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
