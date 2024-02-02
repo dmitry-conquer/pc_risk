@@ -6,7 +6,7 @@
       @@include('components/header.html', { })
       <main class="container grow pb-[60px] pt-5 sm:pb-20 xl:pb-[120px]">
         <div class="flex flex-col gap-x-[60px] gap-y-[60px] sm:gap-y-20 xl:flex-row">
-          <div class="w-full grow">
+          <div id="article-body" class="w-full grow">
             <div class="mb-6 flex items-center gap-x-2">
               <a href="/" class="leading-normal text-gray-900 transition-colors hover:text-blue-800">Home</a>
               <svg class="size-3 rotate-180">
@@ -16,15 +16,15 @@
             </div>
             <div class="mb-10">
               <span class="mb-2.5 inline-flex h-8 items-center rounded-full bg-gray-50 px-3 text-center font-medium uppercase leading-normal text-blue-800">Ransomware</span>
-              <h1 class="mb-6 text-2xl xl:text-3xl font-bold text-gray-900 leading-snug">Ljaz (.ljaz) ransomware virus - removal and decryption options</h1>
-              <div class="flex flex-col md:flex-row md:items-center gap-x-4 gap-y-3">
+              <h1 class="mb-6 text-2xl font-bold leading-snug text-gray-900 xl:text-3xl">Ljaz (.ljaz) ransomware virus - removal and decryption options</h1>
+              <div class="flex flex-col gap-x-4 gap-y-3 md:flex-row md:items-center">
                 <div class="flex items-center gap-x-2">
                   <img src="./img/article/avatar.webp" alt="Tomas Meskauskas" class="size-[43px]" />
                   <p class="leading-normal text-gray-900/60">Tomas Meskauskas</p>
                 </div>
-                <span class="text-gray-900/60 hidden md:block">•</span>
+                <span class="hidden text-gray-900/60 md:block">•</span>
                 <p class="leading-normal text-gray-900/60">Published December 15, 2023</p>
-                <span class="text-gray-900/60 hidden md:block">•</span>
+                <span class="hidden text-gray-900/60 md:block">•</span>
                 <div class="flex items-center gap-x-2">
                   <p class="leading-normal text-gray-900/60">Damage level:</p>
                   <div class="flex gap-x-1">
@@ -124,6 +124,9 @@
                 distribution is software vulnerabilities.
               </p>
               <table>
+                <caption>
+                  Threat Summary
+                </caption>
                 <tbody>
                   <tr>
                     <td>Name:</td>
@@ -289,6 +292,188 @@
                 should log-out of all cloud storage accounts within browsers and other related software. You should also consider temporarily uninstalling the cloud-management software until the infection is completely removed.
               </p>
             </div>
+
+            <!-- FAQ -->
+            <div class="mb-10">
+              <h2 class="mb-5 text-2xl font-bold leading-loose text-gray-900">Frequently asked questions</h2>
+              <div class="space-y-2">
+                <div class="rounded-lg border border-gray-200 px-5 py-3">
+                  <div class="spoiler-trigger group flex items-center justify-between" role="button" aria-expanded="false">
+                    <p class="text-lg font-semibold leading-tight text-gray-900">How was my computer hacked and how did hackers encrypt my files?</p>
+                    <span class="block text-2xl font-light text-blue-800 group-[.is-active]:hidden">+</span>
+                    <span class="hidden text-2xl font-light text-blue-800 group-[.is-active]:block">-</span>
+                  </div>
+                  <div class="max-h-0 overflow-hidden pr-[60px] transition-all duration-300" aria-hidden="true">
+                    <p class="pt-2.5 text-base leading-normal text-gray-900/60">
+                      Threat actors distribute ransomware via email (malicious links or attachments), P2P networks, compromised pages, infected USB drives, malicious ads, etc. Djvu ransomware is commonly distributed via pirated software and dubious pages
+                      offering to download videos from YouTube.
+                    </p>
+                  </div>
+                </div>
+                <div class="rounded-lg border border-gray-200 px-5 py-3">
+                  <div class="spoiler-trigger group flex items-center justify-between" role="button" aria-expanded="false">
+                    <p class="text-lg font-semibold leading-tight text-gray-900">How to open ".ljaz" files?</p>
+                    <span class="block text-2xl font-light text-blue-800 group-[.is-active]:hidden">+</span>
+                    <span class="hidden text-2xl font-light text-blue-800 group-[.is-active]:block">-</span>
+                  </div>
+                  <div class="max-h-0 overflow-hidden pr-[60px] transition-all duration-300" aria-hidden="true">
+                    <p class="pt-2.5 text-base leading-normal text-gray-900/60">
+                      Threat actors distribute ransomware via email (malicious links or attachments), P2P networks, compromised pages, infected USB drives, malicious ads, etc. Djvu ransomware is commonly distributed via pirated software and dubious pages
+                      offering to download videos from YouTube.
+                    </p>
+                  </div>
+                </div>
+                <div class="rounded-lg border border-gray-200 px-5 py-3">
+                  <div class="spoiler-trigger group flex items-center justify-between" role="button" aria-expanded="false">
+                    <p class="text-lg font-semibold leading-tight text-gray-900">How can I decrypt ".ljaz" files for free?</p>
+                    <span class="block text-2xl font-light text-blue-800 group-[.is-active]:hidden">+</span>
+                    <span class="hidden text-2xl font-light text-blue-800 group-[.is-active]:block">-</span>
+                  </div>
+                  <div class="max-h-0 overflow-hidden pr-[60px] transition-all duration-300" aria-hidden="true">
+                    <p class="pt-2.5 text-base leading-normal text-gray-900/60">
+                      Threat actors distribute ransomware via email (malicious links or attachments), P2P networks, compromised pages, infected USB drives, malicious ads, etc. Djvu ransomware is commonly distributed via pirated software and dubious pages
+                      offering to download videos from YouTube.
+                    </p>
+                  </div>
+                </div>
+                <div class="rounded-lg border border-gray-200 px-5 py-3">
+                  <div class="spoiler-trigger group flex items-center justify-between" role="button" aria-expanded="false">
+                    <p class="text-lg font-semibold leading-tight text-gray-900">Should I pay a ransom?</p>
+                    <span class="block text-2xl font-light text-blue-800 group-[.is-active]:hidden">+</span>
+                    <span class="hidden text-2xl font-light text-blue-800 group-[.is-active]:block">-</span>
+                  </div>
+                  <div class="max-h-0 overflow-hidden pr-[60px] transition-all duration-300" aria-hidden="true">
+                    <p class="pt-2.5 text-base leading-normal text-gray-900/60">
+                      Threat actors distribute ransomware via email (malicious links or attachments), P2P networks, compromised pages, infected USB drives, malicious ads, etc. Djvu ransomware is commonly distributed via pirated software and dubious pages
+                      offering to download videos from YouTube.
+                    </p>
+                  </div>
+                </div>
+                <div class="rounded-lg border border-gray-200 px-5 py-3">
+                  <div class="spoiler-trigger group flex items-center justify-between" role="button" aria-expanded="false">
+                    <p class="text-lg font-semibold leading-tight text-gray-900">Will Combo Cleaner help me remove Ljaz ransomware?</p>
+                    <span class="block text-2xl font-light text-blue-800 group-[.is-active]:hidden">+</span>
+                    <span class="hidden text-2xl font-light text-blue-800 group-[.is-active]:block">-</span>
+                  </div>
+                  <div class="max-h-0 overflow-hidden pr-[60px] transition-all duration-300" aria-hidden="true">
+                    <p class="pt-2.5 text-base leading-normal text-gray-900/60">
+                      Threat actors distribute ransomware via email (malicious links or attachments), P2P networks, compromised pages, infected USB drives, malicious ads, etc. Djvu ransomware is commonly distributed via pirated software and dubious pages
+                      offering to download videos from YouTube.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Socials -->
+            <div class="mb-10 flex items-center gap-x-5">
+              <p class="text-xl font-bold leading-loose text-gray-900">Share:</p>
+              <div class="flex gap-x-[14px]">
+                <a href="" class="flex h-8 items-center gap-x-2.5 rounded-md bg-[#0B84EE] px-3 text-center text-sm font-bold leading-tight text-white transition-opacity hover:opacity-70">
+                  <img src="./img/fb-sm.svg" alt="facebook" />
+                  Facebook
+                </a>
+                <a href="" class="flex h-8 items-center gap-x-2.5 rounded-md bg-[#55ACE3] px-3 text-center text-sm font-bold leading-tight text-white transition-opacity hover:opacity-70">
+                  <img src="./img/tw-sm.svg" alt="twitter" />
+                  Facebook
+                </a>
+                <a href="" class="flex h-8 items-center gap-x-2.5 rounded-md bg-[#2878B7] px-3 text-center text-sm font-bold leading-tight text-white transition-opacity hover:opacity-70">
+                  <img src="./img/in-sm.svg" alt="linkedin" />
+                  LinkedIn
+                </a>
+                <a href="" class="flex h-8 items-center gap-x-2.5 rounded-md bg-gray-50 px-3 text-center text-sm font-bold leading-tight text-blue-800 transition-opacity hover:opacity-70">
+                  <img src="./img/copy-sm.svg" alt="copy link" />
+                  Copy Link
+                </a>
+              </div>
+            </div>
+
+            <!-- Author -->
+            <div class="mb-[100px] flex items-center gap-x-5 xl:mb-36">
+              <img src="./img/article/avatar-bottom.webp" alt="Tomas Meskauskas" class="size-[150px] shrink-0 overflow-hidden rounded-2xl" />
+              <div>
+                <p class="mb-1 text-xl font-bold leading-loose text-gray-900">Tomas Meskauskas</p>
+                <p class="font-italic mb-3 italic leading-normal text-gray-900/60">Expert security researcher, professional malware analyst</p>
+                <p class="text-sm leading-tight text-gray-900">
+                  I am passionate about computer security and technology. I have an experience of over 10 years working in various companies related to computer technical issue solving and Internet security. I have been working as an author and editor for
+                  pcrisk.com since 2010. Follow me on Twitter and LinkedIn to stay informed about the latest online security threats.
+                </p>
+              </div>
+            </div>
+
+            <!-- Comments -->
+            <div>
+              <div class="mb-6 w-full border-b border-gray-900/10 pb-3">
+                <span class="text-sm font-bold uppercase leading-tight text-gray-900/50">2 comments</span>
+              </div>
+
+              <!-- Comments list -->
+              <div class="mb-[60px]">
+                <!-- Comment - deep 0 -->
+                <div class="mb-6 flex items-start gap-x-5">
+                  <img src="./img/article/avatarcom1.webp" alt="Mike Dolphino" class="size-[72px]" />
+                  <div>
+                    <div class="mb-6">
+                      <p class="mb-1 text-xl font-bold leading-7 text-gray-900">Mike Dolphino</p>
+                      <p class="leading-normal text-gray-900/50">October 19, 2022 at 4:35 pm</p>
+                    </div>
+                    <p class="mb-5 leading-normal text-gray-900">Wow thanks for sharing, just solved a puzzle I've been having!</p>
+                    <button type="button" class="flex items-center gap-x-3 font-bold leading-normal text-blue-800 transition-opacity hover:opacity-70">
+                      <svg class="size-5">
+                        <use href="./sprites/sprite.svg#icon-arrow-bold"></use>
+                      </svg>
+                      Reply
+                    </button>
+                  </div>
+                </div>
+                <!-- Comment - deep 1 -->
+                <div class="flex items-start gap-x-5 pl-10">
+                  <img src="./img/article/avatarcom2.webp" alt="Mike Dolphino" class="size-[72px]" />
+                  <div>
+                    <div class="mb-6">
+                      <p class="mb-1 text-xl font-bold leading-7 text-gray-900">Karolis Liucveikis</p>
+                      <p class="leading-normal text-gray-900/50">October 23, 2023 at 9:02 am</p>
+                    </div>
+                    <p class="mb-5 leading-normal text-gray-900">Really some great advice!</p>
+                    <button type="button" class="flex items-center gap-x-3 font-bold leading-normal text-blue-800 transition-opacity hover:opacity-70">
+                      <svg class="size-5">
+                        <use href="./sprites/sprite.svg#icon-arrow-bold"></use>
+                      </svg>
+                      Reply
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Send comment -->
+              <div class="mb-[60px] sm:mb-[100px] xl:mb-[120px]">
+                <p class="mb-6 text-xl font-bold leading-loose text-gray-900">Leave a comment</p>
+                <form action="#" class="space-y-5">
+                  <div class="flex flex-col gap-5 sm:flex-row">
+                    <div class="w-full">
+                      <label for="full-name" class="mb-2.5 block text-sm font-bold leading-tight text-gray-900">Name*</label>
+                      <input type="text" id="full-name" placeholder="Name" class="h-11 w-full rounded-lg border border-gray-900/10 bg-gray-900 bg-opacity-5 px-3.5 transition-colors focus:border-blue-800 focus:outline-none" />
+                    </div>
+                    <div class="w-full">
+                      <label for="email" class="mb-2.5 block text-sm font-bold leading-tight text-gray-900">Email*</label>
+                      <input type="text" id="email" placeholder="Email" class="h-11 w-full rounded-lg border border-gray-900/10 bg-gray-900 bg-opacity-5 px-3.5 transition-colors focus:border-blue-800 focus:outline-none" />
+                    </div>
+                  </div>
+                  <div class="w-full">
+                    <textarea placeholder="Message" class="h-[160px] w-full resize-none rounded-lg border border-gray-900/10 bg-gray-900 bg-opacity-5 px-3.5 py-2.5 transition-colors focus:border-blue-800 focus:outline-none"></textarea>
+                  </div>
+
+                  <label class="mb-6 flex cursor-pointer items-center gap-x-3">
+                    <input type="checkbox" class="size-5 rounded focus:ring-blue-500" />
+                    <span>Save my name, email, and website in this browser for the next time I comment.</span>
+                  </label>
+
+                  <button type="submit" class="inline-flex h-10 items-center rounded-full border border-transparent bg-blue-800 px-[56px] font-bold leading-normal text-white transition-colors hover:border-blue-800 hover:bg-white hover:text-blue-800">
+                    Post Comment
+                  </button>
+                </form>
+              </div>
+            </div>
           </div>
 
           <aside class="w-full shrink-0 space-y-10 pt-4 xl:w-[360px]">
@@ -420,6 +605,16 @@
               </div>
             </section>
           </aside>
+        </div>
+
+        <!-- Donate section -->
+        <div data-da="#article-body,1272,last" class="rounded-2xl bg-blue-800 px-5 py-10 sm:px-10">
+          <div class="mx-auto flex max-w-[955px] flex-col items-center gap-y-4 text-center text-white">
+            <p class="text-lg font-semibold leading-tight">PCrisk security portal is brought by a company RCS LT.</p>
+            <p class="text-sm leading-tight">Joined forces of security researchers help educate computer users about the latest online security threats. More information about the company RCS LT.</p>
+            <p class="text-sm uppercase leading-tight">Our malware removal guides are free. However, if you want to support us you can send us a donation.</p>
+            <a href="#" class="inline-flex h-11 w-[180px] items-center justify-center rounded-full bg-[#F6C656] font-bold uppercase leading-normal text-blue-800 transition-opacity hover:opacity-70">Donate</a>
+          </div>
         </div>
       </main>
       @@include('components/footer.html', { })

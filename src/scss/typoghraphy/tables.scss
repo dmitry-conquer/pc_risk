@@ -1,5 +1,8 @@
 table {
   @apply w-full overflow-hidden rounded-xl;
+  caption {
+    @apply border-b border-white bg-blue-800 py-4 text-xl font-semibold uppercase leading-loose text-white;
+  }
 }
 tbody {
   @apply w-full divide-white sm:divide-y;
