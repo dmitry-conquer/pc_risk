@@ -2,7 +2,7 @@
 <html lang="uk">
   @@include('components/head.html', { 'title': 'Single atricle' })
   <body>
-    <div class="flex min-h-screen flex-col">
+    <div class="relative flex min-h-screen flex-col overflow-hidden">
       @@include('components/header.html', { })
       <main class="container grow pb-[60px] pt-5 sm:pb-20 xl:pb-[120px]">
         <div class="flex flex-col gap-x-[60px] gap-y-[60px] sm:gap-y-20 xl:flex-row">
@@ -16,15 +16,15 @@
             </div>
             <div class="mb-10">
               <span class="mb-2.5 inline-flex h-8 items-center rounded-full bg-gray-50 px-3 text-center font-medium uppercase leading-normal text-blue-800">Ransomware</span>
-              <h1 class="mb-6 text-3xl font-bold text-gray-900">Ljaz (.ljaz) ransomware virus - removal and decryption options</h1>
-              <div class="flex items-center gap-x-4">
+              <h1 class="mb-6 text-2xl xl:text-3xl font-bold text-gray-900 leading-snug">Ljaz (.ljaz) ransomware virus - removal and decryption options</h1>
+              <div class="flex flex-col md:flex-row md:items-center gap-x-4 gap-y-3">
                 <div class="flex items-center gap-x-2">
                   <img src="./img/article/avatar.webp" alt="Tomas Meskauskas" class="size-[43px]" />
                   <p class="leading-normal text-gray-900/60">Tomas Meskauskas</p>
                 </div>
-                <span class="text-gray-900/60">•</span>
+                <span class="text-gray-900/60 hidden md:block">•</span>
                 <p class="leading-normal text-gray-900/60">Published December 15, 2023</p>
-                <span class="text-gray-900/60">•</span>
+                <span class="text-gray-900/60 hidden md:block">•</span>
                 <div class="flex items-center gap-x-2">
                   <p class="leading-normal text-gray-900/60">Damage level:</p>
                   <div class="flex gap-x-1">
@@ -53,7 +53,7 @@
               </a>
             </div>
 
-            <div class="rounded-xl bg-gray-50 p-5">
+            <div class="mb-10 rounded-xl bg-gray-50 p-5">
               <p class="mb-3 text-lg font-bold text-blue-900">Table of content</p>
               <ol>
                 <li><a href="#">Description</a></li>
@@ -73,6 +73,221 @@
                 <li><a href="#">Prevention</a></li>
                 <li><a href="#">FAQ</a></li>
               </ol>
+            </div>
+
+            <div
+              class="prose max-w-none prose-a:text-blue-600 prose-a:underline prose-code:block prose-code:rounded-xl prose-code:bg-gray-50 prose-code:p-5 prose-code:font-roboto prose-code:text-base prose-code:font-normal prose-code:leading-loose prose-tr:border-b-0">
+              <h2>What kind of malware is Ljaz?</h2>
+              <p>
+                In the course of our review of malware samples submitted to VirusTotal, it has been identified that Ljaz is ransomware belonging to the Djvu family. Ljaz encrypts files, appends its extension (".ljaz") to filenames), and creates the
+                "_readme.txt" file (a ransom note).
+              </p>
+              <p>
+                An example of how Ljaz modifies filenames: it renames "1.jpg" to "1.jpg.ljaz", "2.png" to "2.png.ljaz", and so forth. Significantly, Djvu ransomware attacks frequently incorporate information stealers such as Vidar or RedLine, with
+                cybercriminals intending to steal data before encrypting files.
+              </p>
+              <p>Screenshot of files encrypted by Ljaz ransomware:</p>
+              <img src="./img/article/1.webp" alt="image" />
+              <h2>Ljaz ransom note overview</h2>
+              <p>
+                The ransom note assures the victim that all their files, including pictures, databases, documents, and other crucial data, have been encrypted using the strongest encryption and a unique key. The only way to recover these files is by purchasing
+                a decrypt tool and a unique key.
+              </p>
+              <p>
+                The attackers offer a guarantee by allowing the victim to send one encrypted file from their computer, which the attackers will decrypt for free as a demonstration. However, they stipulate that the file must not contain valuable information.
+              </p>
+              <p>
+                The ransom amount for the private key and decrypt software is $980, with a 50% discount available if the victim contacts the attackers within the first 72 hours, reducing the price to $490. The note warns that data restoration is impossible
+                without payment.
+              </p>
+              <p>In order to receive the decryption tools, the victim is instructed to write to the provided email address: support@freshmail.top. Additionally, a reserve email address is provided for contact: datarestorehelpyou@airmail.cc.</p>
+              <h2>More about ransomware</h2>
+              <p>
+                Victims are strongly advised against negotiating with ransomware attackers or making any ransom payments. Regrettably, obtaining access to files without payment is highly unlikely unless victims can locate an external decryption tool or possess
+                backed-up copies of their files.
+              </p>
+              <p>
+                Additionally, it is crucial for victims to swiftly remove ransomware from compromised computers to prevent potential additional encryption and the further dissemination of the ransomware across a local network. Acting promptly in this regard is
+                essential to reduce the impact and halt the advancement of the ransomware threat.
+              </p>
+              <h2>Ransomware in general</h2>
+              To sum up, ransomware continues to be a widespread and ever-changing menace, presenting substantial risks to individuals and organizations on a global scale. Diligent measures such as frequent data backups and strong security protocols play
+              pivotal roles as essential safeguards against ransomware attacks. Some examples of different ransomware variants are <a href="https://www.pcrisk.com/removal-guides/28568-bulock-ransomware" target="_blank">BuLock</a>,
+              <a href="https://www.pcrisk.com/removal-guides/28540-fun-ransomware" target="_blank">Fun</a>, and <a href="https://www.pcrisk.com/removal-guides/28525-wana-cry-chaos-ransomware" target="_blank">WANA CRY</a>.
+              <h2>How did ransomware infect my computer?</h2>
+              <p>
+                Cybercriminals utilize diverse tactics to spread Djvu ransomware. They employ methods such as distributing pirated software, cracking tools, or key generators. Deceptive websites that falsely claim to offer YouTube video downloads, as well as
+                emails containing malicious attachments or links, are also exploited as avenues to deceive users into unintentionally activating ransomware on their computer systems.
+              </p>
+              <p>
+                Exposure to malware can also occur by interacting with harmful advertisements and obtaining files and programs from peer-to-peer (P2P) networks, torrent websites, third-party downloaders, and similar sources. Another avenue for malware
+                distribution is software vulnerabilities.
+              </p>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>Name:</td>
+                    <td>Ljaz virus</td>
+                  </tr>
+                  <tr>
+                    <td>Threat Type:</td>
+                    <td>Ransomware, Crypto Virus, Files locker</td>
+                  </tr>
+                  <tr>
+                    <td>Encrypted Files Extension:</td>
+                    <td>.ljaz</td>
+                  </tr>
+                  <tr>
+                    <td>Ransom Demanding Message:</td>
+                    <td>_readme.txt</td>
+                  </tr>
+                  <tr>
+                    <td>Free Decryptor Available:</td>
+                    <td>Partial (<a href="https://www.pcrisk.com/removal-guides/28607-ljaz-ransomware#djvu-decryption" target="_blank">more information below</a>)</td>
+                  </tr>
+                  <tr>
+                    <td>Ransom Amount:</td>
+                    <td><strong>$490/$980</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Cyber Criminal Contact:</td>
+                    <td>support@freshmail.top, datarestorehelpyou@airmail.cc</td>
+                  </tr>
+                  <tr>
+                    <td>Detection Names:</td>
+                    <td>
+                      Avast (FileRepMalware [Ransom]), Bkav Pro (W32.AIDetectMalware), ESET-NOD32 (A Variant Of Win32/Kryptik.HVPL), Kaspersky (HEUR:Trojan-Ransom.Win32.Stop.gen), Microsoft (Trojan:Win32/Smokeloader.KAB!MTBa), Full List Of Detections (<a
+                        href="https://www.virustotal.com/gui/file/8771d2858713633f87cc69dbec2e0b14bece2c002a59039e67e73c945a1f105d?nocache=1"
+                        target="_blank"
+                        >VirusTotal</a
+                      >)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Symptoms:</td>
+                    <td>
+                      Cannot open files stored on your computer, previously functional files now have a different extension (for example, my.docx.locked). A ransom demand message is displayed on your desktop. Cyber criminals demand payment of a ransom (usually
+                      in bitcoins) to unlock your files.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Distribution methods:</td>
+                    <td>Infected email attachments (macros), torrent websites, malicious ads, pirated software, cracking tools, pages offering to download videos from YouTube, etc.</td>
+                  </tr>
+                  <tr>
+                    <td>Damage:</td>
+                    <td>All files are encrypted and cannot be opened without paying a ransom. Additional password-stealing trojans and malware infections can be installed together with a ransomware infection.</td>
+                  </tr>
+                  <tr>
+                    <td>Malware Removal (Windows):</td>
+                    <td>
+                      <p>To eliminate possible malware infections, scan your computer with legitimate antivirus software. Our security researchers recommend using Combo Cleaner.</p>
+                      <a href="#" class="mb-10 mt-8 flex h-[48px] w-[300px] items-center justify-center gap-x-2 rounded-full bg-[#00A11A] px-5 font-bold leading-normal !text-white !no-underline transition-colors hover:bg-green-700/80">
+                        <svg class="size-5 text-white">
+                          <use href="./sprites/sprite.svg#icon-download"></use>
+                        </svg>
+                        Download <span class="uppercase">“Combo Cleaner”</span>
+                      </a>
+                      <p class="text-sm">To use full-featured product, you have to purchase a license for Combo Cleaner. 7 days free trial available. Combo Cleaner is owned and operated by Rcs Lt, the parent company of PCRisk.com read more.</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h2>How to protect yourself from ransomware infections?</h2>
+              <p>Install reliable antivirus and anti-malware tools to establish a strong defense against a range of potential threats. Ensure that your operating system, antivirus software, web browsers, and other applications are regularly updated.</p>
+              <p>
+                Exercise caution with email attachments and links, particularly when the sender is unfamiliar and the email is unsolicited. Steer clear of suspicious websites and approach pop-up ads with caution. Download software and files exclusively from
+                trusted sources, such as official pages and app stores.
+              </p>
+              <p>
+                Refrain from downloading pirated software or tools, including cracking tools designed to bypass software activation. Stick to legitimate and authorized sources for software downloads. If your computer is already infected with Ljaz, we recommend
+                running a scan with <a href="https://www.pcrisk.com/download-combo-cleaner-windows" target="_blank">Combo Cleaner Antivirus for Windows</a> to automatically eliminate this ransomware.
+              </p>
+              <p>Screenshot of Ljaz's text file ("_readme.txt"):</p>
+              <img src="./img/article/2.webp" alt="image" />
+              <h3>Text in the ransom note:</h3>
+              <code>
+                ATTENTION! <br />
+                Don't worry, you can return all your files! <br />
+                All your files like pictures, databases, documents and other important are encrypted with strongest encryption <br />
+                and unique key. <br />
+                The only method of recovering files is to purchase decrypt tool and unique key for you. <br />
+                This software will decrypt all your encrypted files. <br />
+                What guarantees you have? <br />
+                You can send one of your encrypted file from your PC and we decrypt it for free. <br />
+                But we can decrypt only 1 file for free. File must not contain valuable information. <br />
+                You can get and look video overview decrypt tool:hxxps://we.tl/t-mFyI2phKffPrice of private <br />
+                key and decrypt software is $980.Discount 50% available if you contact us first 72 hours, that's price <br />
+                for you is $490.Please note that you'll never restore your data without payment. <br />
+                Check your e-mail "Spam" or "Junk" folder if you don't get answer more than 6 hours. <br />
+                <br />
+                To get this software you need write on our e-mail: support@freshmail.top <br />
+                Reserve e-mail address to contact us: datarestorehelpyou@airmail.cc <br />
+                Your personal ID: -
+              </code>
+              <p>
+                There are currently two versions of Djvu ransomware infections: old and new. The old versions were designed to encrypt data by using a hard-coded "offline key" whenever the infected machine had no internet connection or the server was timing
+                out/not responding.
+              </p>
+              <p>
+                Therefore, some victims were able to decrypt data using a tool developed by cyber security researcher, <a href="https://www.twitter.com/demonslay335" target="_blank">Michael Gillespie</a>, however, since the encryption mechanism has been
+                slightly changed (hence the new version, released in August, 2019), the decrypter no longer works and it is not supported anymore.
+              </p>
+              <p>
+                If your data has been encrypted by an older version, you might be able to restore it with the another tool developed by Emsisoft and Michael Gillespie. It supports a total of 148 Djvu's variants and you can find more information, as well as
+                download link and decryption instructions in <a href="https://www.emsisoft.com/ransomware-decryption-tools/stop-djvu" target="_blank">Emsisoft's official page</a>.
+              </p>
+              <p>Screenshot of Djvu decryption tool by Emsisoft and Michael Gillespie:</p>
+              <h2>Ljaz ransomware removal</h2>
+              <h3>Instant automatic malware removal:</h3>
+              <p>
+                Manual threat removal might be a lengthy and complicated process that requires advanced IT skills. Combo Cleaner is a professional automatic malware removal tool that is recommended to get rid of malware. Download it by clicking the button
+                below:
+              </p>
+              <a href="#" class="my-8 flex h-[48px] w-[300px] items-center justify-center gap-x-2 rounded-full bg-[#00A11A] px-5 font-bold leading-normal !text-white !no-underline transition-colors hover:bg-green-700/80">
+                <svg class="size-5 text-white">
+                  <use href="./sprites/sprite.svg#icon-download"></use>
+                </svg>
+                Download <span class="uppercase">“Combo Cleaner”</span>
+              </a>
+              <p class="text-sm">
+                By downloading any software listed on this website you agree to our <a href="https://www.pcrisk.com/privacy-policy" target="_blank">Privacy Policy</a> and <a href="https://www.pcrisk.com/terms-of-use" target="_blank">Terms of Use</a>. To use
+                full-featured product, you have to purchase a license for Combo Cleaner. 7 days free trial available. Combo Cleaner is owned and operated by Rcs Lt, the parent company of PCRisk.com
+                <a href="https://www.pcrisk.com/about-us" target="_blank">read more</a>.
+              </p>
+              <h3>Video suggesting what steps should be taken in case of a ransomware infection:</h3>
+              <img src="./img/article/yplaceholder.webp" alt="video" />
+              <h3>Reporting ransomware to authorities:</h3>
+              <p>
+                If you are a victim of a ransomware attack we recommend reporting this incident to authorities. By providing information to law enforcement agencies you will help track cybercrime and potentially assist in the prosecution of the attackers.
+                Here's a list of authorities where you should report a ransomware attack. For the complete list of local cybersecurity centers and information on why you should report ransomware attacks, read this article. List of local authorities where
+                ransomware attacks should be reported (choose one depending on your residence address):
+              </p>
+              <img src="./img/article/3.webp" alt="image" />
+              <h3>Isolating the infected device:</h3>
+              <p>
+                Some ransomware-type infections are designed to encrypt files within external storage devices, infect them, and even spread throughout the entire local network. For this reason, it is very important to isolate the infected device (computer) as
+                soon as possible.
+              </p>
+              <h3>Step 1: Disconnect from the internet.</h3>
+              <p>
+                The easiest way to disconnect a computer from the internet is to unplug the Ethernet cable from the motherboard, however, some devices are connected via a wireless network and for some users (especially those who are not particularly
+                tech-savvy), disconnecting cables may seem troublesome. Therefore, you can also disconnect the system manually via Control Panel:
+              </p>
+              <p>Navigate to the <strong>"Control Panel"</strong>, click the search bar in the upper-right corner of the screen, enter <strong>"Network and Sharing Center"</strong> and select search result:</p>
+              <img src="./img/article/4.webp" alt="image" />
+              <h3>Step 2: Unplug all storage devices.</h3>
+              <p>
+                As mentioned above, ransomware might encrypt data and infiltrate all storage devices that are connected to the computer. For this reason, all external storage devices (flash drives, portable hard drives, etc.) should be disconnected
+                immediately, however, we strongly advise you to eject each device before disconnecting to prevent data corruption:
+              </p>
+              <p>Navigate to <strong>"My Computer"</strong>, right-click on each connected device, and select <strong>"Eject"</strong>:</p>
+              <img src="./img/article/5.webp" alt="image" />
+              <h3>Step 3: Log-out of cloud storage accounts.</h3>
+              <p>
+                Some ransomware-type might be able to hijack software that handles data stored within "<a href="https://en.wikipedia.org/wiki/Cloud_storage" target="_blank">the Cloud</a>". Therefore, the data could be corrupted/encrypted. For this reason, you
+                should log-out of all cloud storage accounts within browsers and other related software. You should also consider temporarily uninstalling the cloud-management software until the infection is completely removed.
+              </p>
             </div>
           </div>
 

@@ -1,0 +1,17 @@
+table {
+  @apply w-full overflow-hidden rounded-xl;
+}
+tbody {
+  @apply w-full divide-white sm:divide-y;
+}
+tr {
+  @apply divide-x divide-white;
+  td {
+    &:first-child {
+      @apply block bg-blue-800/10 px-5 py-4 text-sm font-medium uppercase text-neutral-800 sm:table-cell md:w-[316px];
+    }
+    &:last-child {
+      @apply block bg-blue-800/5 px-5 py-4 text-base sm:table-cell;
+    }
+  }
+}

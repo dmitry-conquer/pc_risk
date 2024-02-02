@@ -1,33 +1,27 @@
 ol {
-  list-style-type: none;
   counter-reset: item;
-  margin: 0;
-  padding: 0;
 }
 
 ol > li {
-  display: table;
   counter-increment: item;
-  margin-bottom: 12px;
-  color: #0041a1;
+  @apply mb-3 table text-[#0041a1];
   a {
-    text-decoration: underline;
+    @apply underline;
   }
 }
 
 ol > li:before {
   content: counters(item, ".") ". ";
-  display: table-cell;
-  padding-right: 0.6em;
+  @apply table-cell pr-[0.6em];
 }
 
 li ol > li {
-  margin: 8px;
+  @apply m-2;
   &:first-child {
-    margin-top: 12px;
+    @apply mt-3;
   }
   &:last-child {
-    margin-bottom: 0;
+    @apply mb-0;
   }
 }
 
