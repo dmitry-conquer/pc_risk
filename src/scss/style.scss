@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import "../../node_modules/swiper/swiper.scss";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,11 +10,10 @@
 @import "ui/tabs";
 @import "ui/popups";
 
+
 @import "typoghraphy/table-content";
 @import "typoghraphy/tables";
 @import "typoghraphy/normalize-quotes";
-
-
 
 @layer base {
   html {
