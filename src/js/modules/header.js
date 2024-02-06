@@ -12,7 +12,6 @@ if (burgerButton && burgerMenu) {
 function toggleHeaderActions(e) {
   if (e.target.closest("#burger-button")) {
     if (!burgerMenu.classList.contains("active-menu")) {
-      document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = null;
     }
@@ -20,7 +19,6 @@ function toggleHeaderActions(e) {
     burgerInner.classList.toggle("active-burger");
     burgerMenu.classList.toggle("active-menu");
   } else if (!e.target.closest("#header-nav") && burgerInner.classList.contains("active-burger")) {
-    document.body.style.overflow = null;
     burgerCross.classList.remove("active-burger");
     burgerInner.classList.remove("active-burger");
     burgerMenu.classList.remove("active-menu");
