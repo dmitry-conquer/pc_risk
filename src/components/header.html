@@ -5,8 +5,8 @@
     </a>
     <nav
       id="header-nav"
-      class="fixed right-0 top-0 z-20 h-screen w-full max-w-[320px] translate-x-full overflow-auto bg-blue-800 transition-transform duration-500 ease-out lg:static lg:h-auto lg:w-auto lg:max-w-none lg:translate-x-0 lg:bg-transparent xl:mr-auto">
-      <div class="w-full h-full relative">
+      class="[&.active-menu]:translate-x-0 fixed right-0 top-0 z-20 h-screen w-full max-w-[320px] translate-x-full overflow-auto bg-blue-800 transition-transform duration-500 ease-out lg:static lg:h-auto lg:w-auto lg:max-w-none lg:translate-x-0 lg:bg-transparent xl:mr-auto">
+      <div class="w-full relative">
         <ul class="flex w-full flex-col items-center justify-center gap-x-8 gap-y-5 pt-20 lg:w-auto lg:flex-row lg:pt-0">
           <li>
             <a href="removal-guides.html" class="text-base font-medium uppercase leading-tight text-white transition-colors hover:underline lg:text-sm lg:text-neutral-800 lg:hover:text-blue-800 lg:hover:no-underline">REMOVAL GUIDES</a>
@@ -24,7 +24,7 @@
             <a href="website-scaner.html" class="text-base font-medium uppercase leading-tight text-white transition-colors hover:underline lg:text-sm lg:text-neutral-800 lg:hover:text-blue-800 lg:hover:no-underline">WEBSITE SCANNER</a>
           </li>
         </ul>
-        <div role="button" aria-label="Close menu" id="close-menu" class="group z-[999] absolute top-3 right-3.5 hidden">
+        <div role="button" aria-label="Close menu" id="close-menu" class="group absolute top-3 right-3.5 hidden max-lg:[&.is-active]:block">
           <div class="relative flex h-[50px] w-[40px] transform items-center justify-center overflow-hidden">
             <div id="burger-inner" class="flex h-[21px] w-[27px] origin-center transform flex-col justify-between overflow-hidden transition-all duration-300">
               <div id="burger-cross" class="absolute top-2.5 flex w-12 translate-x-0 transform items-center justify-between transition-all duration-500 [&>*:nth-child(1)]:rotate-45 [&>*:nth-child(2)]:-rotate-45">
@@ -50,7 +50,7 @@
         <input class="h-full w-full bg-transparent leading-normal text-neutral-800 placeholder:text-neutral-800 focus:outline-none" placeholder="Search" />
       </form>
     </div>
-    <div role="button" aria-label="Open menu" id="burger-button" class="group relative z-[999] block lg:hidden">
+    <div role="button" aria-label="Open menu" id="burger-button" class="group relative block lg:hidden">
       <div class="relative flex h-[50px] w-[40px] transform items-center justify-center overflow-hidden">
         <div id="burger-inner" class="flex h-[21px] w-[27px] origin-center transform flex-col justify-between overflow-hidden transition-all duration-300">
           <div class="h-[2px] w-full origin-left transform rounded-2xl bg-neutral-800 transition-all duration-300"></div>

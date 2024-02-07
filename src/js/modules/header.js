@@ -7,12 +7,10 @@ const searchForm = document.getElementById("search-form");
 function toggleHeaderActions(e) {
   if (e.target.closest("#burger-button")) {
     burgerMenu.classList.add("active-menu");
-    burgerButton.style.display = "none";
-    closeMenu.style.display = "block";
+    closeMenu.classList.add("is-active");
   } else if (e.target.closest("#close-menu") || (!e.target.closest("#header-nav") && burgerMenu.classList.contains("active-menu"))) {
     burgerMenu.classList.remove("active-menu");
-    burgerButton.style.display = "block";
-    closeMenu.style.display = "none";
+    closeMenu.classList.remove("is-active");
   }
 
   if (e.target.closest("#open-search")) {
