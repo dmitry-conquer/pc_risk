@@ -1,27 +1,18 @@
 const burgerButton = document.getElementById("burger-button");
-const burgerInner = document.getElementById("burger-inner");
-const burgerCross = document.getElementById("burger-cross");
+const closeMenu = document.getElementById("close-menu");
 const burgerMenu = document.getElementById("header-nav");
 const openSearchButton = document.getElementById("open-search");
 const searchForm = document.getElementById("search-form");
 
-if (burgerButton && burgerMenu) {
-  document.body.addEventListener("click", toggleHeaderActions);
-}
-
 function toggleHeaderActions(e) {
   if (e.target.closest("#burger-button")) {
-    if (!burgerMenu.classList.contains("active-menu")) {
-    } else {
-      document.body.style.overflow = null;
-    }
-    burgerCross.classList.toggle("active-burger");
-    burgerInner.classList.toggle("active-burger");
-    burgerMenu.classList.toggle("active-menu");
-  } else if (!e.target.closest("#header-nav") && burgerInner.classList.contains("active-burger")) {
-    burgerCross.classList.remove("active-burger");
-    burgerInner.classList.remove("active-burger");
+    burgerMenu.classList.add("active-menu");
+    burgerButton.style.display = "none";
+    closeMenu.style.display = "block";
+  } else if (e.target.closest("#close-menu") || (!e.target.closest("#header-nav") && burgerMenu.classList.contains("active-menu"))) {
     burgerMenu.classList.remove("active-menu");
+    burgerButton.style.display = "block";
+    closeMenu.style.display = "none";
   }
 
   if (e.target.closest("#open-search")) {
@@ -32,4 +23,8 @@ function toggleHeaderActions(e) {
     searchForm.classList.remove("is-open");
     openSearchButton.classList.remove("is-hidden");
   }
+}
+
+if (burgerButton && burgerMenu) {
+  document.body.addEventListener("click", toggleHeaderActions);
 }
