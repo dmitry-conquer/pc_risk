@@ -1,0 +1,45 @@
+ol {
+  // counter-reset: item;
+}
+ol > li {
+  // counter-increment: item;
+  // &:before {
+  //   content: counters(item, ".") ". ";
+  //   @apply table-cell pr-[0.6em];
+  // }
+  @apply mb-3 table text-[#0041a1];
+  a {
+    @apply text-lg font-bold;
+    &:hover {
+      @apply text-blue-600;
+    }
+  }
+}
+
+// li ol > li:before {
+//   content: counters(item, ".") " ";
+// }
+
+li > ol {
+  @apply pl-4;
+}
+
+li ol > li {
+  @apply m-2;
+  a {
+    @apply text-base font-normal;
+  }
+  &:first-child {
+    @apply mt-3;
+  }
+  &:last-child {
+    @apply mb-0;
+  }
+}
+
+li > ol > li > ol > li {
+  @apply m-1;
+  a {
+    @apply text-[13px];
+  }
+}
