@@ -1,31 +1,31 @@
 <header class="flex h-[72px] items-center shadow-md xl:h-[90px]">
-  <div class="mx-auto flex w-full max-w-[1440px] items-center justify-normal gap-10 px-4 lg:justify-between xl:gap-0 2xl:justify-start">
+  <div class="mx-auto flex w-full max-w-[1440px] items-center justify-normal space-x-10 px-4 lg:justify-between xl:space-x-0 2xl:justify-start">
     <a href="/" class="mr-auto shrink-0 lg:mr-0 xl:mr-[57px]">
       <img src="./img/logo.svg" alt="logo" class="h-auto w-[121px] object-contain sm:w-24 xl:w-40" />
     </a>
     <nav
       id="header-nav"
-      class="fixed right-0 top-0 z-20 h-screen w-full max-w-[320px] translate-x-full overflow-auto bg-blue-800 transition-transform duration-500 ease-out lg:static lg:h-auto lg:w-auto lg:max-w-none lg:translate-x-0 lg:bg-transparent xl:mr-auto [&.active-menu]:translate-x-0">
+      class="fixed right-0 top-0 z-20 h-screen w-full max-w-[320px] translate-x-full overflow-auto grow bg-blue-800 transition-transform duration-500 ease-out lg:static lg:h-auto lg:w-auto lg:max-w-none lg:translate-x-0 lg:bg-transparent xl:mr-auto [&.active-menu]:translate-x-0">
       <div class="relative w-full">
-        <ul class="flex w-full flex-col items-center justify-center gap-x-8 gap-y-5 pt-20 lg:w-auto lg:flex-row lg:pt-0">
+        <ul class="flex w-full flex-col items-center justify-center lg:space-x-8 max-lg:space-y-5 pt-20 lg:w-auto lg:flex-row lg:pt-0">
           <li>
-            <a href="removal-guides.html" class="menu-link text-base font-medium uppercase leading-tight text-white transition-colors hover:underline lg:text-sm lg:text-neutral-800 lg:hover:text-blue-800 lg:hover:no-underline [&.current-page]:text-blue-800"
+            <a href="removal-guides.html" class="menu-link text-base font-medium uppercase leading-tight text-white transition-colors hover:underline lg:text-sm lg:text-neutral-800 lg:hover:text-blue-800 lg:hover:no-underline lg:[&.current-page]:text-blue-800 [&.current-page]:underline"
               >REMOVAL GUIDES</a
             >
           </li>
           <li>
-            <a href="news.html" class="menu-link text-base font-medium uppercase leading-tight text-white transition-colors hover:underline lg:text-sm lg:text-neutral-800 lg:hover:text-blue-800 lg:hover:no-underline [&.current-page]:text-blue-800">NEWS</a>
+            <a href="news.html" class="menu-link text-base font-medium uppercase leading-tight text-white transition-colors hover:underline lg:text-sm lg:text-neutral-800 lg:hover:text-blue-800 lg:hover:no-underline lg:[&.current-page]:text-blue-800 [&.current-page]:underline">NEWS</a>
           </li>
           <li>
-            <a href="blog.html" class="menu-link text-base font-medium uppercase leading-tight text-white transition-colors hover:underline lg:text-sm lg:text-neutral-800 lg:hover:text-blue-800 lg:hover:no-underline [&.current-page]:text-blue-800">BLOG</a>
+            <a href="blog.html" class="menu-link text-base font-medium uppercase leading-tight text-white transition-colors hover:underline lg:text-sm lg:text-neutral-800 lg:hover:text-blue-800 lg:hover:no-underline lg:[&.current-page]:text-blue-800 [&.current-page]:underline">BLOG</a>
           </li>
           <li>
-            <a href="top-antivirus.html" class="menu-link text-base font-medium uppercase leading-tight text-white transition-colors hover:underline lg:text-sm lg:text-neutral-800 lg:hover:text-blue-800 lg:hover:no-underline [&.current-page]:text-blue-800"
+            <a href="top-antivirus.html" class="menu-link text-base font-medium uppercase leading-tight text-white transition-colors hover:underline lg:text-sm lg:text-neutral-800 lg:hover:text-blue-800 lg:hover:no-underline lg:[&.current-page]:text-blue-800 [&.current-page]:underline"
               >TOP ANTIVIRUS 2023</a
             >
           </li>
           <li>
-            <a href="website-scaner.html" class="menu-link text-base font-medium uppercase leading-tight text-white transition-colors hover:underline lg:text-sm lg:text-neutral-800 lg:hover:text-blue-800 lg:hover:no-underline [&.current-page]:text-blue-800"
+            <a href="website-scaner.html" class="menu-link text-base font-medium uppercase leading-tight text-white transition-colors hover:underline lg:text-sm lg:text-neutral-800 lg:hover:text-blue-800 lg:hover:no-underline lg:[&.current-page]:text-blue-800 [&.current-page]:underline"
               >WEBSITE SCANNER</a
             >
           </li>
@@ -42,14 +42,14 @@
         </div>
       </div>
     </nav>
-    <div data-da="#header-nav,639.98,last" class="flex items-center gap-x-2">
+    <div data-da="#header-nav,639.98,last" class="flex items-center justify-center space-x-2">
       <button id="open-search" class="hidden size-6 sm:max-xl:block" type="button">
         <img src="./img/search.svg" alt="Open search" />
       </button>
       <form
         action="#"
         id="search-form"
-        class="absolute right-0 top-[72px] z-10 mx-auto mt-6 hidden h-11 w-full items-center gap-2 border bg-neutral-100 px-3.5 transition focus-within:border-blue-800 max-sm:static max-sm:flex max-sm:w-[80%] max-sm:rounded-[40px] sm:mt-0 xl:static xl:flex xl:w-[280px] xl:rounded-[40px] xl:border-transparent">
+        class="absolute right-0 top-[72px] z-10 mx-auto mt-6 hidden h-11 w-full items-center space-x-2 border bg-neutral-100 px-3.5 transition focus-within:border-blue-800 max-sm:static max-sm:flex max-sm:w-[80%] max-sm:rounded-[40px] sm:mt-0 xl:static xl:flex xl:w-[280px] xl:rounded-[40px] xl:border-transparent">
         <button class="size-6 shrink-0" type="submit">
           <img src="./img/search.svg" alt="Search" />
         </button>

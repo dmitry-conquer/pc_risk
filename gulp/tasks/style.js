@@ -21,7 +21,7 @@ export const style = () => {
         tailwindcss("./tailwind.config.js"),
         autoprefixer({
           grid: true,
-          overrideBrowserslist: "last 2 versions",
+          overrideBrowserslist: "last 10 versions",
         }),
         cssnano(),
       ]),
