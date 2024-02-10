@@ -5,7 +5,7 @@
     <div class="relative flex min-h-screen flex-col overflow-hidden">
       @@include('components/header.html', { })
       <main class="container grow pb-[60px] pt-5 sm:pb-20 xl:pb-[120px]">
-        <div class="flex flex-col space-x-[60px] space-y-[60px] sm:space-y-20 xl:flex-row">
+        <div class="flex flex-col max-sm:space-y-[60px] max-xl:sm:space-y-20 xl:flex-row xl:space-x-[60px]">
           <div id="article-body" class="w-full grow">
             <div class="mb-6 flex items-center space-x-2">
               <a href="/" class="leading-normal text-gray-900 transition-colors hover:text-blue-800">Home</a>
@@ -20,7 +20,10 @@
               <p class="mb-2">Also Known As: <span class="font-bold">Ads by ExploreFast</span></p>
               <div class="flex flex-wrap items-center space-x-4 space-y-3">
                 <div class="flex items-center space-x-2">
-                  <img src="./img/article/avatar.webp" alt="Tomas Meskauskas" class="size-[43px]" />
+                  <picture>
+                    <source srcset="./img/article/avatar.webp" type="image/webp" />
+                    <img src="./img/article/avatar.png" alt="Tomas Meskauskas" class="size-[43px]" />
+                  </picture>
                   <p class="leading-normal text-gray-900/60">Tomas Meskauskas</p>
                 </div>
                 <span class="hidden text-gray-900/60 md:block">•</span>
@@ -50,7 +53,7 @@
                 <svg class="size-5 text-white group-hover:text-[#00A11A]">
                   <use href="./sprites/sprite.svg#icon-download"></use>
                 </svg>
-                Remove it now
+                <span>Remove it now</span>
               </a>
             </div>
 
@@ -83,7 +86,10 @@
                 cybercriminals intending to steal data before encrypting files.
               </p>
               <p>Screenshot of files encrypted by Ljaz ransomware:</p>
-              <img src="./img/article/1.webp" alt="image" />
+              <picture>
+                <source srcset="./img/article/1.webp" type="image/webp" />
+                <img src="./img/article/1.jpeg" alt="image" />
+              </picture>
               <h2 id="ljaz-ransom-note-overview">Ljaz ransom note overview</h2>
               <p>
                 The ransom note assures the victim that all their files, including pictures, databases, documents, and other crucial data, have been encrypted using the strongest encryption and a unique key. The only way to recover these files is by purchasing
@@ -185,7 +191,7 @@
                         <svg class="size-5 text-white">
                           <use href="./sprites/sprite.svg#icon-download"></use>
                         </svg>
-                        Download <span class="uppercase">“Combo Cleaner”</span>
+                        <span>Download</span> <span class="uppercase">“Combo Cleaner”</span>
                       </a>
                       <p class="text-sm">To use full-featured product, you have to purchase a license for Combo Cleaner. 7 days free trial available. Combo Cleaner is owned and operated by Rcs Lt, the parent company of PCRisk.com read more.</p>
                     </td>
@@ -203,7 +209,10 @@
                 running a scan with <a href="https://www.pcrisk.com/download-combo-cleaner-windows" target="_blank">Combo Cleaner Antivirus for Windows</a> to automatically eliminate this ransomware.
               </p>
               <p>Screenshot of Ljaz's text file ("_readme.txt"):</p>
-              <img src="./img/article/2.webp" alt="image" />
+              <picture>
+                <source srcset="./img/article/2.webp" type="image/webp" />
+                <img src="./img/article/2.jpeg" alt="image" />
+              </picture>
               <p>Text in the ransom note:</p>
               <code>
                 ATTENTION! <br />
@@ -247,7 +256,7 @@
                 <svg class="size-5 text-white">
                   <use href="./sprites/sprite.svg#icon-download"></use>
                 </svg>
-                Download <span class="uppercase">“Combo Cleaner”</span>
+                <span>Download</span> <span class="uppercase">“Combo Cleaner”</span>
               </a>
               <p class="text-sm">
                 By downloading any software listed on this website you agree to our <a href="https://www.pcrisk.com/privacy-policy" target="_blank">Privacy Policy</a> and <a href="https://www.pcrisk.com/terms-of-use" target="_blank">Terms of Use</a>. To use
@@ -255,14 +264,20 @@
                 <a href="https://www.pcrisk.com/about-us" target="_blank">read more</a>.
               </p>
               <h3 id="video-suggesting-what-steps-should-be-taken-in-case-of-a-ransomware-infection">Video suggesting what steps should be taken in case of a ransomware infection:</h3>
-              <img src="./img/article/yplaceholder.webp" alt="video" />
+              <picture>
+                <source srcset="./img/article/yplaceholder.webp" type="image/webp" />
+                <img src="./img/article/yplaceholder.jpeg" alt="image" />
+              </picture>
               <h3 id="reporting-ransomware-to-authorities">Reporting ransomware to authorities:</h3>
               <p>
                 If you are a victim of a ransomware attack we recommend reporting this incident to authorities. By providing information to law enforcement agencies you will help track cybercrime and potentially assist in the prosecution of the attackers.
                 Here's a list of authorities where you should report a ransomware attack. For the complete list of local cybersecurity centers and information on why you should report ransomware attacks, read this article. List of local authorities where
                 ransomware attacks should be reported (choose one depending on your residence address):
               </p>
-              <img src="./img/article/3.webp" alt="image" />
+              <picture>
+                <source srcset="./img/article/3.webp" type="image/webp" />
+                <img src="./img/article/3.jpeg" alt="image" />
+              </picture>
               <h3 id="isolating-the-infected-device">Isolating the infected device:</h3>
               <p>
                 Some ransomware-type infections are designed to encrypt files within external storage devices, infect them, and even spread throughout the entire local network. For this reason, it is very important to isolate the infected device (computer) as
@@ -274,14 +289,20 @@
                 tech-savvy), disconnecting cables may seem troublesome. Therefore, you can also disconnect the system manually via Control Panel:
               </p>
               <p>Navigate to the <strong>"Control Panel"</strong>, click the search bar in the upper-right corner of the screen, enter <strong>"Network and Sharing Center"</strong> and select search result:</p>
-              <img src="./img/article/4.webp" alt="image" />
+              <picture>
+                <source srcset="./img/article/4.webp" type="image/webp" />
+                <img src="./img/article/4.jpeg" alt="image" />
+              </picture>
               <h4 id="unplug-all-storage-devices">Step 2: Unplug all storage devices.</h4>
               <p>
                 As mentioned above, ransomware might encrypt data and infiltrate all storage devices that are connected to the computer. For this reason, all external storage devices (flash drives, portable hard drives, etc.) should be disconnected
                 immediately, however, we strongly advise you to eject each device before disconnecting to prevent data corruption:
               </p>
               <p>Navigate to <strong>"My Computer"</strong>, right-click on each connected device, and select <strong>"Eject"</strong>:</p>
-              <img src="./img/article/5.webp" alt="image" />
+              <picture>
+                <source srcset="./img/article/5.webp" type="image/webp" />
+                <img src="./img/article/5.jpeg" alt="image" />
+              </picture>
               <h4 id="log-out-of-cloud-storage-accounts">Step 3: Log-out of cloud storage accounts.</h4>
               <p>
                 Some ransomware-type might be able to hijack software that handles data stored within "<a href="https://en.wikipedia.org/wiki/Cloud_storage" target="_blank">the Cloud</a>". Therefore, the data could be corrupted/encrypted. For this reason, you
@@ -385,8 +406,11 @@
             </div>
 
             <!-- Author -->
-            <div class="mb-[100px] flex flex-col items-start space-x-5 sm:flex-row sm:items-center xl:mb-36">
-              <img src="./img/article/avatar-bottom.webp" alt="Tomas Meskauskas" class="size-[150px] shrink-0 overflow-hidden rounded-2xl max-sm:mb-5" />
+            <div class="mb-[100px] flex flex-col items-start sm:space-x-5 sm:flex-row sm:items-center xl:mb-36">
+              <picture class="shrink-0">
+                <source srcset="./img/article/avatar-bottom.webp" type="image/webp" />
+                <img src="./img/article/avatar-bottom.png" alt="Tomas Meskauskas" class="size-[150px] shrink-0 overflow-hidden rounded-2xl max-sm:mb-5" />
+              </picture>
               <div>
                 <p class="mb-1 text-xl font-bold leading-tight text-gray-900">Tomas Meskauskas</p>
                 <p class="font-italic mb-3 italic leading-normal text-gray-900/60">Expert security researcher, professional malware analyst</p>
@@ -407,7 +431,10 @@
               <div class="mb-[60px]">
                 <!-- Comment - deep 0 -->
                 <div class="mb-6 flex items-start space-x-5">
-                  <img src="./img/article/avatarcom1.webp" alt="Mike Dolphino" class="size-[60px] sm:size-[72px]" />
+                  <picture>
+                    <source srcset="./img/article/avatarcom1.webp" type="image/webp" />
+                    <img src="./img/article/avatarcom1.png" alt="Mike Dolphino" class="size-[60px] sm:size-[72px]" />
+                  </picture>
                   <div>
                     <div class="mb-6">
                       <p class="mb-1 text-xl font-bold leading-7 text-gray-900">Mike Dolphino</p>
@@ -424,7 +451,10 @@
                 </div>
                 <!-- Comment - deep 1 -->
                 <div class="flex items-start space-x-5 pl-10">
-                  <img src="./img/article/avatarcom2.webp" alt="Mike Dolphino" class="size-[60px] sm:size-[72px]" />
+                  <picture>
+                    <source srcset="./img/article/avatarcom2.webp" type="image/webp" />
+                    <img src="./img/article/avatarcom2.png" alt="Karolis Liucveikis" class="size-[60px] sm:size-[72px]" />
+                  </picture>
                   <div>
                     <div class="mb-6">
                       <p class="mb-1 text-xl font-bold leading-7 text-gray-900">Karolis Liucveikis</p>
@@ -445,7 +475,7 @@
               <div class="mb-[60px] sm:mb-[100px] xl:mb-[120px]">
                 <p class="mb-6 text-xl font-bold leading-loose text-gray-900">Leave a comment</p>
                 <form action="#" class="space-y-5">
-                  <div class="flex flex-col max-sm:space-y-5 sm:space-x-5 sm:flex-row">
+                  <div class="flex flex-col max-sm:space-y-5 sm:flex-row sm:space-x-5">
                     <div class="w-full">
                       <label for="full-name" class="mb-2.5 block text-sm font-bold leading-tight text-gray-900">Name*</label>
                       <input type="text" id="full-name" placeholder="Name" class="h-11 w-full rounded-lg border border-gray-900/10 bg-gray-900 bg-opacity-5 px-3.5 transition-colors focus:border-blue-800 focus:outline-none" />
@@ -617,7 +647,10 @@
             <section class="rounded-xl border border-black/10 px-5 py-6 text-center">
               <div class="mx-auto flex flex-col items-center space-y-3 max-xl:max-w-[500px]">
                 <h2 class="text-xl font-bold uppercase text-gray-900">QR Code</h2>
-                <img src="./img/article/qr.webp" alt="QR Code" class="size-[152px]" />
+                <picture>
+                  <source srcset="./img/article/qr.webp" type="image/webp" />
+                  <img src="./img/article/qr.png" alt="QR Code" class="size-[152px]" />
+                </picture>
                 <p class="text-sm leading-normal text-gray-900">Scan this QR code to have an easy access removal guide of Ljaz virus on your mobile device.</p>
               </div>
             </section>
@@ -633,7 +666,7 @@
                     <svg class="size-5 text-white group-hover:text-[#00A11A]">
                       <use href="./sprites/sprite.svg#icon-download"></use>
                     </svg>
-                    Download <span class="uppercase">“Combo Cleaner”</span>
+                    <span>Download</span> <span class="uppercase">“Combo Cleaner”</span>
                   </a>
                   <p class="text-center leading-normal text-gray-900">Platform: <strong>Windows</strong></p>
                   <div class="flex items-center space-x-4">
