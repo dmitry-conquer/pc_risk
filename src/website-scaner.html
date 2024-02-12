@@ -44,7 +44,7 @@
         <section id="report-details" class="md:mt-18 mx-auto mt-[60px] w-full max-w-[1000px] bg-[#F7F8FA] px-5 py-10 sm:p-10 lg:rounded-2xl">
           <div class="flex flex-col items-center text-center">
             <div class="mx-auto max-w-[800px]">
-              <h2 class="text-2xl font-bold leading-loose text-gray-900">Visited an infected website?</h2>
+              <h2 class="mb-3 text-2xl font-bold text-gray-900">Visited an infected website?</h2>
               <p class="leading-normal text-gray-900">
                 Visiting infected websites poses a direct threat to your computer security. We recommend scanning your computer with Combo Cleaner. It's equipped with a real-time browsing protection feature that will protect your computer while surfing the
                 Internet.
@@ -52,8 +52,8 @@
             </div>
             <a
               href="#"
-              class="group mb-10 mt-8 flex h-[48px] w-[300px] items-center justify-center space-x-2 rounded-full border border-transparent bg-[#00A11A] px-5 font-bold leading-normal text-white transition-colors hover:border-green-700 hover:bg-white hover:text-green-700">
-              <svg class="size-5 text-white group-hover:text-[#00A11A]">
+              class="my-7 flex h-[48px] w-full max-w-[300px] flex-wrap items-center justify-center space-x-2 rounded-full bg-[#00A11A] px-5 py-1 text-sm font-bold leading-none !text-white !no-underline transition-colors hover:bg-green-700/80 sm:text-base">
+              <svg class="size-5 shrink-0 text-white">
                 <use href="./sprites/sprite.svg#icon-download"></use>
               </svg>
               <span>Download</span> <span class="uppercase">“Combo Cleaner”</span>
@@ -69,7 +69,7 @@
             <div class="relative mb-10">
               <span class="absolute bottom-[1px] left-0 h-[1px] w-full bg-[#DDE5EF]"></span>
               <div class="slider-bar w-full overflow-hidden px-5">
-                <div class="slider-bar-wrap  flex w-full ">
+                <div class="slider-bar-wrap flex w-full">
                   <button data-tab-button="sitescan-report" type="button" class="active-tab-button slider-bar-item relative z-10 shrink-0 py-2 text-sm uppercase leading-tight text-blue-800 transition-colors enabled:hover:text-blue-400 sm:text-base">
                     Sitescan report
                   </button>
@@ -100,9 +100,9 @@
                   <tr>
                     <td>Normalized URL:</td>
                     <td>
-                      <a href="https://scanner.pcrisk.com/" class="flex items-center space-x-2.5 transition-colors hover:text-blue-800">
+                      <a href="https://scanner.pcrisk.com/" class="flex items-center space-x-2.5 transition-colors hover:text-blue-800 !leading-none">
                         <img src="./img/external-link.svg" alt="external-link" class="size-5" />
-                        https://scanner.pcrisk.com/
+                        <span>https://scanner.pcrisk.com/</span>
                       </a>
                     </td>
                   </tr>

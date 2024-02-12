@@ -1,0 +1,30 @@
+.prose p {
+  @apply my-[18px];
+}
+
+.prose blockquote {
+  @apply border-l-[4px] border-[#dde5ef] pl-4;
+  p {
+    @apply italic text-[#1E202499];
+  }
+}
+.prose a {
+  @apply text-blue-600 transition-colors hover:text-blue-400;
+}
+.prose img,
+.prose picture {
+  @apply my-[20px];
+}
+
+.prose h2 {
+  @apply mt-[32px] border-b pb-2 text-[30px] font-bold leading-snug text-[#111827];
+}
+
+.prose h3 {
+  @apply my-[24px] text-[1.25em] font-bold leading-normal text-[#111827];
+}
+.prose h4,
+.prose h5,
+.prose h6 {
+  @apply my-5 text-lg font-bold leading-normal text-[#111827];
+}

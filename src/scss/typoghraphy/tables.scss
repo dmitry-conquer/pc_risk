@@ -8,8 +8,9 @@ tbody {
   @apply w-full divide-white sm:divide-y;
 }
 tr {
-  @apply flex flex-col md:divide-x divide-white md:flex-row;
+  @apply flex flex-col divide-white md:flex-row md:divide-x;
   td {
+    word-break: break-word;
     &:first-child {
       @apply block w-full shrink-0 bg-blue-800/10 px-5 py-4 text-sm font-medium uppercase text-neutral-800  md:w-[316px];
     }
